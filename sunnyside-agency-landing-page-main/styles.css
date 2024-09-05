@@ -1,0 +1,403 @@
+/* Section 1 */
+/* Section 1 - 全局基础样式 */
+body {
+    font-family: 'Barlow', sans-serif; /* 基本字体 */
+    font-size: 18px; /* 全局字号为18px */
+    color: hsl(213, 9%, 39%); /* Very dark grayish blue */
+    background-color: hsl(0, 0%, 100%); /* White */
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  h1, h2, h3, h4, h5, h6 {
+      font-family: 'Fraunces', serif; /* 强调字体 */
+      font-weight: 700; /* 默认使用700权重 */
+  }
+  
+  p, a, li {
+      font-family: 'Barlow', sans-serif; /* 基本字体 */
+      font-weight: 600; /* 默认600权重 */
+  }
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0;
+}
+
+/* 使用 flex 布局，保证 logo 和导航菜单两端对齐 */
+.container header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0px;
+    background-color: #3DBEFF; /* 蓝色背景 */
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    align-items: center; /* 保证菜单项居中对齐 */
+    margin: 0;
+}
+
+.logo {
+    font-size: 24px;
+    color: #FFFFFF;
+    margin: 5px;
+}
+
+.navbar ul {
+    list-style: none;
+    display: flex;
+    align-items: center;
+    margin: 10px;
+    padding: 10px;
+}
+
+.navbar ul li {
+    margin-left: 20px; /* 调整每个菜单项的间距 */
+}
+
+.navbar ul li a {
+    text-decoration: none;
+    color: #FFFFFF;
+    padding: 10px;
+}
+
+.navbar .contact {
+    background-color: #FFFFFF;
+    border: 1px solid #FFFFFF;
+    border-radius: 50px;
+    padding: 10px 20px;
+    color: #3DBEFF; /* 蓝色字体 */
+    text-transform: uppercase; /* 字母大写 */
+}
+
+/* 汉堡菜单默认隐藏 */
+.hamburger {
+    display: none;
+    margin-left: auto;
+}
+
+/* Section2 */
+.half-orange {
+    text-align: center;
+    margin: 0;
+    background-color: #3DBEFF; /* 蓝色背景 */
+    padding: 0 0;
+}
+
+.half-orange h2 {
+    color: #FFFFFF;
+    font-size: 36px;
+    margin: 0;
+    padding-bottom: 0;
+}
+
+.half-orange img {
+    max-width: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+/* Section 3 */
+.content {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.content-block {
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    justify-content: center;
+    align-items: flex-start; /* 调整文本左对齐 */
+    padding: 0px;
+    color: #333;
+}
+
+.content-block h3 {
+    width:70%;
+    font-size: 45px;
+    color: hsl(167, 40%, 24%);
+    padding: 0;
+    align-items: center; /* 垂直居中 */
+    justify-content: center; /* 水平居中 */
+}
+
+.content-block p {
+    font-size: 16px;
+    width:80%;
+    color: hsl(232, 10%, 55%);
+    padding: 20px;
+    align-items: center; /* 垂直居中 */
+    justify-content: center; /* 水平居中 */
+}
+
+.content-block a {
+    position: relative;
+    color: inherit;
+    text-decoration: none;
+    padding: 30px;
+}
+
+.content-block a::before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    margin-top: -10px;
+    height: 3px;
+    bottom: 0;
+    left: 0;
+    background-color: hsl(51, 100%, 49%);
+    box-shadow: 0 0 10px hsl(51, 100%, 49%), 0 0 20px hsl(51, 100%, 49%);
+    z-index: -1;
+    transition: all 0.3s ease;
+}
+
+.content-block a:hover::before {
+    height: 5px;
+}
+
+.egg, .glass {
+    width: 100%;
+    height: auto;
+}
+
+/* Section 4 */
+.image-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    width: 50%;
+    text-align: center;
+}
+
+.image-container img {
+    width: 100%;
+    height: auto;
+}
+
+.image-container h3, .image-container p {
+    position: absolute;
+    transform: translate(-50%, -50%);
+    left: 50%;
+}
+
+.image-container h3 {
+    top: 60%;
+    color: hsl(167, 40%, 24%);
+    padding: 20px;
+    font-size: 24px;
+}
+
+.image-container p {
+    top: 75%;
+    color: hsl(167, 40%, 24%);
+    padding: 20px;
+    font-size: 12px;
+}
+
+/* Testimonials */
+.testimonials-section {
+    text-align: center;
+    background-color: #faf6f4;
+    padding: 50px 0;
+}
+
+.testimonials {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.testimonial {
+    max-width: 300px;
+    margin: 0 20px;
+}
+
+.testimonial img {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.testimonial p {
+    font-size: 1rem;
+    font-style: italic;
+    color: #555;
+}
+
+.testimonial h4 {
+    font-size: 1.1rem;
+    font-weight: 700;
+    color: #333;
+}
+
+.testimonial span {
+    font-size: 0.9rem;
+    color: #999;
+}
+
+/* 图片画廊 */
+.image-gallery {
+    display: flex;
+    justify-content: space-between;
+    padding: 0;
+    background-color: #faf6f4;
+    margin-top: 20px;
+}
+
+.image-item {
+    flex: 1;
+}
+
+.image-item img {
+    width: 100%;
+    height: auto;
+}
+
+/* Footer */
+.footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #96c9c0;
+    padding: 50px 0;
+    margin-top: -60px;
+}
+
+.footer-title {
+    font-size: 2.5rem;
+    justify-content: center;
+    font-weight: bold;
+    color: #2c4b40;
+    margin-bottom: 0;
+}
+
+.footer-nav {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 30px;
+}
+
+
+.footer-nav a {
+    color: #5c6c6c;
+    margin: 0 15px;
+    text-decoration: none;
+}
+
+.footer-nav a:hover {
+    color: #2c4b40;
+}
+
+.footer-social {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+/* 响应式设计 */
+@media (max-width: 700px) {
+    /* 头部内容垂直排列 */
+    header {
+        /* flex-direction: column; */
+        justify-content: space-between; 
+        position: relative; /* 确保子元素绝对定位相对于 header */
+    }
+
+    .logo {
+        margin-bottom: 20px;
+        margin-right: auto;
+    }
+
+        /* 默认隐藏导航菜单 */
+    .navbar .nav-links {
+        display: none;
+        flex-direction: column;
+        position: absolute;
+        top: 60px;
+        right: 0;
+        background-color: #FFFFFF; /* 白色背景 */
+        width: 90%;
+        text-align: center;
+        margin-left: auto;
+        z-index: -1; /* 确保导航菜单在其他元素之上 */
+    }
+
+    /* 当鼠标悬浮在 header 上时，显示导航菜单 */
+    header:hover .nav-links {
+        display: flex;
+        z-index: 1;
+    }
+
+    /* 导航链接样式 */
+    .navbar .nav-links li a {
+        text-decoration: none;
+        color: hsl(213, 9%, 39%); /* 灰色字体 */
+        padding: 15px 0;
+        display: block;
+        width: 100%;
+        transition: background-color 0.3s ease;
+    }
+
+    .nav-links li a:hover {
+        background-color: hsl(210, 4%, 67%); /* 灰蓝色背景 */
+    }
+
+    /* Contact 按钮样式 */
+    .nav-links .contact {
+        background-color: hsl(51, 100%, 49%); /* 黄色背景 */
+        border: none;
+        padding: 10px 20px;
+        color: white;
+        text-transform: uppercase;
+        border-radius: 50px;
+        margin: 10px 0;
+        width: 80%;
+    }
+
+    .nav-links .contact:hover {
+        background-color: hsl(7, 99%, 70%); /* 鼠标悬浮时的软红色背景 */
+    }
+
+    /* 调整汉堡菜单样式 */
+    .hamburger {
+        cursor: pointer;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .hamburger span {
+        display: block;
+        width: 30px;
+        height: 3px;
+        background-color: white;
+        margin: 5px 0;
+    }
+
+    .content {
+        flex-direction: column;
+    }
+
+    .content-block, .image-container {
+        width: 100%;
+    }
+
+    .testimonials {
+        flex-direction: column;
+    }
+
+    .image-gallery {
+        flex-direction: column;
+    }
+}
