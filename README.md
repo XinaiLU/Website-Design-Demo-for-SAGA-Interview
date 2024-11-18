@@ -3,7 +3,8 @@
 
 # Frontend Mentor - Sunnyside agency landing page
 
-![Design preview for the Sunnyside agency landing page coding challenge](./design/desktop-preview.jpg)
+![image](https://github.com/user-attachments/assets/b3f1b2fb-44e3-44b4-a169-a90415c6a78d)
+
 
 ## Welcome! 👋
 
